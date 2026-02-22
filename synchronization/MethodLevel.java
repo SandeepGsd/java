@@ -23,7 +23,9 @@ class DisplayMessage{
         System.out.print("[" + message+"i am "+Thread.currentThread().getName());
         Thread.sleep(3000);
 
-        
+    public void display2(String message) throws InterruptedException{
+        System.out.print("[" + message+"i am "+Thread.currentThread().getName());
+        Thread.sleep(3000);
     }
 }
 

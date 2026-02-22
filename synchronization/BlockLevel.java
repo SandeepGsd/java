@@ -12,9 +12,10 @@ class MyThread extends Thread {
 
 class DisplayMessage{
     public static void display(String message){
-        System.out.print("[" + message);
+        System.out.println("[" + message);
         synchronized(new Object()/*random object*/)
         {
+            System.out.println(" i am display by " + Thread.currentThread().getName() + "]");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException ex) {
